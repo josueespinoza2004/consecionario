@@ -6,8 +6,8 @@
   "typescript.updateImportsOnFileMove.enabled": "never",
   "editor.guides.bracketPairs": true,
   "editor.inlineSuggest.enabled": true,
-  "files.autoSave": "onFocusChange",
-  "workbench.colorTheme": "Monokai Pro",
+  "files.autoSave": "afterDelay",
+  "workbench.colorTheme": "NarutoDark",
   "workbench.iconTheme": "material-icon-theme",
   "editor.fontFamily": "'Cascadia Code'",
   "editor.fontLigatures": true,
@@ -17,7 +17,7 @@
   "tabnine.experimentalAutoImports": true,
   "powermode.enabled": true,
   "powermode.shake.enabled": false,
-  "workbench.activityBar.location": "hidden",
+  "workbench.activityBar.location": "default",
   "editor.minimap.enabled": false,
 
   // ===== Configuraciones clave para ESLint v9+ y Prettier ===== //

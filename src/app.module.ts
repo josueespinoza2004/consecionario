@@ -10,6 +10,7 @@ import { CommonModule } from './common/common.module';
 import { BrandsModule } from './modules/brands/brands.module';
 import { BrandsController } from './modules/brands/controllers/brands.controller';
 import { BrandsService } from './modules/brands/services/brands.service';
+import { SeedModule } from './seed/seed.module';
 
 @Module({
   imports: [
@@ -30,6 +31,8 @@ import { BrandsService } from './modules/brands/services/brands.service';
     CommonModule,
 
     BrandsModule,
+
+    SeedModule,
   ],
   controllers: [AppController, CarsController, BrandsController],
   providers: [AppService, CarsService, BrandsService],
