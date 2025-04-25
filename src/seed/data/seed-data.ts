@@ -11,8 +11,17 @@ interface SeedCar {
   deletedAt?: Date;
 }
 
+interface SeedBrand {
+  name: string;
+  description: string;
+  createdAt: Date;
+  updatedAt: Date;
+  deletedAt?: Date;
+}
+
 interface SeedData {
   cars: SeedCar[];
+  brands: SeedBrand[];
 }
 
 export const initialData: SeedData = {
@@ -70,6 +79,43 @@ export const initialData: SeedData = {
       isAvailable: true,
       brand_id: 4,
       description: 'Built for rugged terrain, the Rivian R1T Adventure.',
+      createdAt: new Date(),
+      updatedAt: new Date(),
+    },
+  ],
+  brands: [
+    {
+      name: 'Tesla',
+      description:
+        'Innovadora marca de vehículos eléctricos y tecnologías sostenibles.',
+      createdAt: new Date(),
+      updatedAt: new Date(),
+    },
+    {
+      name: 'Ford',
+      description:
+        'Legendaria automotriz estadounidense con más de un siglo de historia.',
+      createdAt: new Date(),
+      updatedAt: new Date(),
+    },
+    {
+      name: 'Volkswagen',
+      description:
+        'Fabricante alemán conocido por autos confiables e innovadores.',
+      createdAt: new Date(),
+      updatedAt: new Date(),
+    },
+    {
+      name: 'Rivian',
+      description:
+        'Startup estadounidense centrada en vehículos eléctricos todoterreno.',
+      createdAt: new Date(),
+      updatedAt: new Date(),
+    },
+    {
+      name: 'Lucid Motors',
+      description:
+        'Empresa de vehículos eléctricos de lujo enfocada en rendimiento y diseño.',
       createdAt: new Date(),
       updatedAt: new Date(),
     },
