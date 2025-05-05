@@ -11,6 +11,7 @@ import { BrandsModule } from './modules/brands/brands.module';
 import { BrandsController } from './modules/brands/controllers/brands.controller';
 import { BrandsService } from './modules/brands/services/brands.service';
 import { SeedModule } from './seed/seed.module';
+import { AuthModule } from './auth/auth.module';
 
 @Module({
   imports: [
@@ -33,6 +34,8 @@ import { SeedModule } from './seed/seed.module';
     BrandsModule,
 
     SeedModule,
+
+    AuthModule,
   ],
   controllers: [AppController, CarsController, BrandsController],
   providers: [AppService, CarsService, BrandsService],
